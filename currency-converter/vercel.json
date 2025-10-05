@@ -1,0 +1,14 @@
+{
+  "builds": [
+    {
+      "src": "api/currency_api.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "api/currency_api.py"
+    }
+  ]
+}
